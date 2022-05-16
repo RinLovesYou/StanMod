@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{088B4047-B10C-4BE2-AC4C-5D0A00887A88}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StanMod</RootNamespace>
+    <AssemblyName>StanMod</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\MelonLoader\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="AFPSCounter.Examples">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\AFPSCounter.Examples.dll</HintPath>
+    </Reference>
+    <Reference Include="AFPSCounter.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\AFPSCounter.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AmplifyBloom">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\AmplifyBloom.dll</HintPath>
+    </Reference>
+    <Reference Include="AmplifyColor">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\AmplifyColor.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetRipper.VersionUtilities">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\MelonLoader\AssetRipper.VersionUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetsTools.NET">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\MelonLoader\AssetsTools.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="BakeryRuntimeAssembly">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\BakeryRuntimeAssembly.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="FileBasedPrefs">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\FileBasedPrefs.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="InControl">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\InControl.dll</HintPath>
+    </Reference>
+    <Reference Include="InControl.Examples">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\InControl.Examples.dll</HintPath>
+    </Reference>
+    <Reference Include="Malee.ReorderableList">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\Malee.ReorderableList.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\MelonLoader\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="MeshTilesets">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\MeshTilesets.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\MelonLoader\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\MelonLoader\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\MelonLoader\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\MelonLoader\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\MelonLoader\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\MelonLoader\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="NintendoSDKAD">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\NintendoSDKAD.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple360Render.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\Simple360Render.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftMask">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\SoftMask.dll</HintPath>
+    </Reference>
+    <Reference Include="SonyNP">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\SonyNP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tomlet">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\MelonLoader\Tomlet.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="USD.NET">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\USD.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="USD.NET.Unity">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Stanley Parable Ultra Deluxe\The Stanley Parable Ultra Deluxe_Data\Managed\USD.NET.Unity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
